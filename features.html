@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Features — Plugr</title>
+  <meta name="description" content="Everything Plugr can do: plugin scanning, update tracking, project organization, deal hunting, producer tools, themes, sync, and more." />
+  <link rel="canonical" href="https://plugr.co/features.html" />
+  <link rel="icon" type="image/png" href="/assets/logos/plugr-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://plugr.co/features.html" />
+  <meta property="og:title" content="Plugr Features — everything in the box" />
+  <meta property="og:description" content="A guided tour of every feature, from scanning to sync." />
+  <meta property="og:image" content="https://plugr.co/assets/logos/plugr-logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0b0d12" />
+  <link rel="stylesheet" href="/styles/main.css" />
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="site-nav-inner">
+    <a href="/" class="brand" aria-label="Plugr home"><img src="/assets/logos/plugr-logo-dark.png" alt="Plugr" /></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+    </button>
+    <ul class="nav-links" id="primary-nav">
+      <li><a href="/features.html" aria-current="page">Features</a></li>
+      <li><a href="/pricing.html">Pricing</a></li>
+      <li><a href="/support/">Support</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/download.html" class="cta">Try free</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom: 24px;">
+  <div class="container center" style="position: relative; z-index: 1;">
+    <span class="eyebrow">Features</span>
+    <h1>Everything Plugr can do</h1>
+    <p class="lead mt-3" style="margin-inline: auto;">
+      A guided tour of every feature — from the first scan to the deepest corners of your library.
+      No fluff, no jargon.
+    </p>
+  </div>
+</section>
+
+<!-- ================================================================
+     ORGANIZATION
+     ================================================================ -->
+<section class="section-tight">
+  <div class="container">
+    <div class="split-row">
+      <div>
+        <span class="eyebrow">Library</span>
+        <h2>Every plugin and app on your Mac, in one place</h2>
+        <p class="lead">
+          Plugr scans the standard plugin folders on your Mac and gives you a single beautiful view of everything you have —
+          VST3, AU, VST2, AAX, CLAP, and your audio apps too.
+        </p>
+        <ul class="checks">
+          <li>Plugins automatically sorted into instruments, effects, and applications</li>
+          <li>See file size, version, and developer at a glance</li>
+          <li>Switch between a grid of cards or a sortable, resizable table view</li>
+          <li>Filter by format, category, developer, update status, tags, favorites, or hidden</li>
+          <li>Multi-format aware — set a category, tag, or update source on one format and the rest of the family (VST3, VST2, AU, AAX, CLAP) inherit it</li>
+          <li>Catches your audio apps too — DAWs, mastering tools, license managers, plugin installers</li>
+        </ul>
+      </div>
+      <div class="visual">
+        <img src="/assets/screenshots/library-grid.png"
+             alt="Plugr library showing a grid of plugin cards organized by category"
+             width="640" height="420"
+             onerror="this.style.display='none'; this.parentElement.style.aspectRatio='3/2'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center'; this.parentElement.innerHTML='<span style=&quot;color: var(--muted); font-size: 13px;&quot;>Library grid screenshot</span>'" />
+      </div>
+    </div>
+
+    <div class="split-row flip">
+      <div>
+        <span class="eyebrow">Tags &amp; favorites</span>
+        <h2>Make sense of the chaos, your way</h2>
+        <p class="lead">
+          Tag plugins however makes sense to you — "vocal chain", "live set", "mastering" — and star the heavy hitters
+          so they're never more than a click away.
+        </p>
+        <ul class="checks">
+          <li>Custom tags with autocomplete</li>
+          <li>One-click favorites that sit at the top of every view</li>
+          <li>Hide plugins you'll never delete but never use — they stay out of your way until you want them back</li>
+          <li>Add personal notes to any plugin (presets you love, settings to remember)</li>
+          <li>Reorganize the sidebar by dragging sections around</li>
+        </ul>
+      </div>
+      <div class="visual">
+        <img src="/assets/screenshots/tags.png"
+             alt="Plugin detail panel showing custom tags and a personal notes field"
+             width="640" height="420"
+             onerror="this.style.display='none'; this.parentElement.style.aspectRatio='3/2'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center'; this.parentElement.innerHTML='<span style=&quot;color: var(--muted); font-size: 13px;&quot;>Tags &amp; notes screenshot</span>'" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     UPDATES
+     ================================================================ -->
+<section class="section-tight" style="background: color-mix(in srgb, var(--bg-1) 60%, var(--bg-0));">
+  <div class="container">
+    <div class="split-row">
+      <div>
+        <span class="eyebrow">Updates</span>
+        <h2>Never miss an update again</h2>
+        <p class="lead">
+          Plugr keeps tabs on hundreds of plugin developers and tells you the moment a new version comes out — so you'll never wonder again whether your favorite synth has an update waiting.
+        </p>
+        <ul class="checks">
+          <li>Works with hundreds of major developers right out of the box (FabFilter, Soundtoys, Native Instruments, iZotope, Valhalla, UAD, Plugin Alliance, Cableguys, Xfer Records, and many more)</li>
+          <li>Spots big version jumps and flags them with a "Major upgrade" badge so you know which updates are paid</li>
+          <li>Check your entire library at once with a single click</li>
+          <li>For developers Plugr doesn't recognize yet, the in-app "Find update source" flow makes its best guess and lets you confirm in one click — and saved sources can be edited or removed later</li>
+          <li>Opt in to the community update-source feed: working sources users submit flow back into a shared pool everyone benefits from</li>
+        </ul>
+      </div>
+      <div class="visual">
+        <img src="/assets/screenshots/updates-detail.png"
+             alt="Update available badge showing 'Update available — Get v4.2.1' next to a plugin"
+             width="640" height="420"
+             onerror="this.style.display='none'; this.parentElement.style.aspectRatio='3/2'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center'; this.parentElement.innerHTML='<span style=&quot;color: var(--muted); font-size: 13px;&quot;>Update detection screenshot</span>'" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     COMPANION APPS
+     ================================================================ -->
+<section class="section-tight">
+  <div class="container">
+    <div class="split-row flip">
+      <div>
+        <span class="eyebrow">Companion Apps</span>
+        <h2>Every plugin installer in one place</h2>
+        <p class="lead">
+          A lot of your library lives behind vendor apps — Native Access, Waves Central, Splice, iLok, Plugin Alliance Installer, iZotope Product Portal,
+          Komplete Kontrol. Plugr puts all of them on one screen so you don't have to dig through Launchpad.
+        </p>
+        <ul class="checks">
+          <li>A card grid of every plugin-installer and vendor app on your Mac, with each app's real icon pulled straight from the .app bundle</li>
+          <li>See how many plugins each app manages, and an update-count badge when Plugr detects a managed plugin has an update waiting</li>
+          <li>One click to launch any of them — Native Access, Waves Central, Splice, iLok License Manager, Komplete Kontrol, iZotope Product Portal, Plugin Alliance Installer, and more</li>
+          <li>Sort the grid however you like — by name, by plugins managed, or by what has updates pending</li>
+        </ul>
+      </div>
+      <div class="visual">
+        <img src="/assets/screenshots/companion-apps.png"
+             alt="Plugr Companion Apps tab showing a grid of cards for Native Access, Waves Central, Splice, iLok License Manager and other vendor apps with icons and update badges"
+             width="640" height="420"
+             onerror="this.style.display='none'; this.parentElement.style.aspectRatio='3/2'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center'; this.parentElement.innerHTML='<span style=&quot;color: var(--muted); font-size: 13px;&quot;>Companion Apps screenshot</span>'" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     PROJECTS
+     ================================================================ -->
+<section class="section-tight" style="background: color-mix(in srgb, var(--bg-1) 60%, var(--bg-0));">
+  <div class="container">
+    <div class="split-row flip">
+      <div>
+        <span class="eyebrow">Projects</span>
+        <h2>Discover what you actually reach for</h2>
+        <p class="lead">
+          Point Plugr at your project folders and it'll show you your library the way you really use it — by what shows up
+          in your sessions, not what you bought on a whim five years ago.
+        </p>
+        <ul class="checks">
+          <li>Works with Ableton Live, Logic Pro, and FL Studio sessions</li>
+          <li>Three charts at the top — most-used plugins, category mix, developers you rely on — each one clickable to filter the list below</li>
+          <li>Auto-detects tempo and project key from every session, so you can filter by a tempo range or sort by key</li>
+          <li>Per-project ratings (A–F), customizable workflow statuses ("Rough Concept", "In Progress", "Needs Mixing", "Released"), tags, and notes</li>
+          <li>Bounces auto-discovered from folders like Bounces, Exports, Mixdowns, Rendered — and played inline with a SoundCloud-style waveform, click-to-seek, drag-to-scrub, and space/arrow shortcuts</li>
+          <li>Drag any audio file onto a project to attach it as a bounce; drag a single project file onto Plugr to scan just that one</li>
+          <li>Jump from any project straight into your DAW, or from any plugin to every session you've used it in</li>
+        </ul>
+        <div class="daw-row" aria-label="Supported DAWs">
+          <figure><img src="/assets/icons/daw-ableton.png" alt="Ableton Live" /><figcaption>Ableton Live</figcaption></figure>
+          <figure><img src="/assets/icons/daw-logic.png" alt="Logic Pro" /><figcaption>Logic Pro</figcaption></figure>
+          <figure><img src="/assets/icons/daw-flstudio.png" alt="FL Studio" /><figcaption>FL Studio</figcaption></figure>
+        </div>
+      </div>
+      <div class="visual">
+        <img src="/assets/screenshots/projects-detail.png"
+             alt="Plugr projects view showing a table of DAW projects with tempo, key, and plugin counts"
+             width="640" height="420"
+             onerror="this.style.display='none'; this.parentElement.style.aspectRatio='3/2'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center'; this.parentElement.innerHTML='<span style=&quot;color: var(--muted); font-size: 13px;&quot;>Projects view screenshot</span>'" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     DEALS
+     ================================================================ -->
+<section class="section-tight">
+  <div class="container">
+    <div class="split-row">
+      <div>
+        <span class="eyebrow">Deals</span>
+        <h2>Smart deal hunting, built right in</h2>
+        <p class="lead">
+          Plugr keeps an eye on the major plugin sale sites and brings everything into one tidy feed.
+          Smart filters help you focus on what matters to you.
+        </p>
+        <ul class="checks">
+          <li>Pulls in deals from VST Buzz, Plugin Boutique, Audio Plugin Deals, and more</li>
+          <li>Filter by developers you trust, or just browse everything on sale today</li>
+          <li>See instantly which deals are upgrades to plugins you already own</li>
+          <li>View prices in your local currency — USD, EUR, GBP, CAD, AUD, JPY</li>
+          <li>Wishlist deals to come back to, dismiss the ones that aren't for you</li>
+          <li>Sort by discount, by price, or by what's newest</li>
+        </ul>
+      </div>
+      <div class="visual">
+        <img src="/assets/screenshots/deals-detail.png"
+             alt="Plugr deals tab showing discount badges and 'You own' labels"
+             width="640" height="420"
+             onerror="this.style.display='none'; this.parentElement.style.aspectRatio='3/2'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center'; this.parentElement.innerHTML='<span style=&quot;color: var(--muted); font-size: 13px;&quot;>Deals tab screenshot</span>'" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     PRODUCER TOOLS
+     ================================================================ -->
+<section class="section-tight" style="background: color-mix(in srgb, var(--bg-1) 60%, var(--bg-0));">
+  <div class="container">
+    <div class="split-row flip">
+      <div>
+        <span class="eyebrow">Tools</span>
+        <h2>The little tools you needed yesterday</h2>
+        <p class="lead">
+          The tap tempo, delay calculator, and key picker you've been Googling for years — built right into Plugr so you don't
+          have to leave your session to grab them.
+        </p>
+        <ul class="checks">
+          <li>Tap tempo — find the BPM of anything by tapping along, or with the spacebar</li>
+          <li>BPM ↔ delay calculator — convert between any BPM and millisecond delay times for any note value</li>
+          <li>Camelot wheel — find harmonically compatible keys for mixing or remixing</li>
+          <li>Always available, always at the same place — no more juggling browser tabs</li>
+        </ul>
+      </div>
+      <div class="visual">
+        <img src="/assets/screenshots/tools.png"
+             alt="Plugr Tools tab showing tap tempo, delay calculator, and Camelot wheel"
+             width="640" height="420"
+             onerror="this.style.display='none'; this.parentElement.style.aspectRatio='3/2'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center'; this.parentElement.innerHTML='<span style=&quot;color: var(--muted); font-size: 13px;&quot;>Tools tab screenshot</span>'" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     THE REST — secondary feature grid
+     ================================================================ -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>And everything else you'd hope for</h2>
+      <p class="lead">The smaller features that add up to a much better experience.</p>
+    </div>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h3>Studio palette themes</h3>
+        <p>Eleven themes built in — three system defaults plus eight studio-inspired palettes that match the look of popular DAWs.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/></svg>
+        </div>
+        <h3>Bulk editing</h3>
+        <p>Clean up your library fast — rename, retag, or organize hundreds of plugins at once instead of clicking one by one.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 0 1 0 9Z"/></svg>
+        </div>
+        <h3>iCloud sync</h3>
+        <p>Keep your tags, favorites, project library, and update sources synced between your studio Mac and your laptop. (Optional.)</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </div>
+        <h3>Export your library</h3>
+        <p>Take your entire library out as a spreadsheet anytime — useful for backup, insurance documentation, or just peace of mind.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
+        <h3>Backup &amp; restore</h3>
+        <p>Save your entire Plugr setup — tags, favorites, notes, custom sources — as a single file. Restore it on a new Mac in seconds.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>
+        </div>
+        <h3>Multi-format aware</h3>
+        <p>Tag, categorize, or set an update source on one format and every other format of the same plugin (VST3, VST2, AU, AAX, CLAP) inherits it automatically.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <h3>Duplicate detection</h3>
+        <p>Spot older copies of the same plugin sitting alongside newer versions — perfect for cleaning out years of accumulated cruft.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+        <h3>Fast search</h3>
+        <p>Find any plugin by name, developer, or category as you type. Works even on huge libraries with thousands of plugins.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        </div>
+        <h3>Custom categories</h3>
+        <p>Add your own categories if "Effect" and "Instrument" aren't specific enough — "Mastering Suite", "Live FX", whatever you need.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section">
+  <div class="container-narrow center">
+    <h2>Ready to organize the chaos?</h2>
+    <p class="lead mt-2 mb-4">
+      Download Plugr free and scan your library in a couple of minutes. No card required.
+    </p>
+    <div class="btn-group" style="justify-content: center;">
+      <a class="btn btn-primary btn-lg" href="/download.html">Download free trial <span class="arrow">→</span></a>
+      <a class="btn btn-ghost btn-lg" href="/pricing.html">See pricing</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container-wide">
+    <div class="site-footer-grid">
+      <div><div class="brand"><img src="/assets/logos/plugr-logo-dark.png" alt="Plugr" /></div><p class="footer-tag">The audio plugin library you didn't know you needed. Built for Mac, by a working producer.</p></div>
+      <div><h5>Product</h5><ul><li><a href="/features.html">Features</a></li><li><a href="/pricing.html">Pricing</a></li><li><a href="/download.html">Download</a></li><li><a href="/changelog.html">Changelog</a></li></ul></div>
+      <div><h5>Support</h5><ul><li><a href="/support/">Help center</a></li><li><a href="/support/getting-started.html">Getting started</a></li><li><a href="/support/faq.html">FAQ</a></li><li><a href="/support/troubleshooting.html">Troubleshooting</a></li><li><a href="/support/contact.html">Contact</a></li></ul></div>
+      <div><h5>Legal</h5><ul><li><a href="/legal/terms.html">Terms of Service</a></li><li><a href="/legal/privacy.html">Privacy Policy</a></li><li><a href="/legal/refund.html">Refund Policy</a></li><li><a href="/legal/eula.html">License Agreement</a></li><li><a href="/about.html">About</a></li></ul></div>
+    </div>
+    <div class="site-footer-bottom"><span>© 2026 Plugr · made by Josh Isaacs · Boulder, Colorado</span><span><a href="mailto:hello@plugr.co">hello@plugr.co</a></span></div>
+  </div>
+</footer>
+
+<script>(function(){var b=document.querySelector('.nav-toggle'),n=document.getElementById('primary-nav');if(!b||!n)return;b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded','false');}});})();</script>
+</body>
+</html>

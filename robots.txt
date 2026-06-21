@@ -1,0 +1,6 @@
+# robots.txt for plugr.co — let everything be indexed
+User-agent: *
+Allow: /
+
+# Sitemap for search engines
+Sitemap: https://plugr.co/sitemap.xml
