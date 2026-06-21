@@ -361,7 +361,7 @@
       </div>
     </div>
     <div class="site-footer-bottom">
-      <span>© 2026 Plugr · made by Josh Isaacs · Boulder, Colorado</span>
+      <span>© 2026 Plugr · made by an indie producer</span>
       <span><a href="mailto:hello@plugr.co">hello@plugr.co</a></span>
     </div>
   </div>
@@ -380,14 +380,22 @@
       if (e.target.tagName === 'A') { nav.classList.remove('open'); btn.setAttribute('aria-expanded','false'); }
     });
 
-    // Buy buttons currently no-op with a clear note. Wire to LemonSqueezy
-    // / Paddle checkout URLs when ready (see TODO.md monetization spec).
+    // Buy buttons → Lemon Squeezy hosted checkout, one URL per tier.
+    // The `enabled=<variantId>` query param pre-selects the right variant
+    // so the customer doesn't have to pick again on the checkout page.
+    var CHECKOUT = {
+      monthly:  'https://plugr.lemonsqueezy.com/checkout/buy/d6701527-5e5e-43a7-8679-c38a0d27bba7?enabled=1818415',
+      annual:   'https://plugr.lemonsqueezy.com/checkout/buy/210ef268-bf58-4f49-976a-a39454f6f369?enabled=1818417',
+      lifetime: 'https://plugr.lemonsqueezy.com/checkout/buy/e4a0cf1b-81ca-4e2b-9406-28d66850a28a?enabled=1818418',
+    };
     document.querySelectorAll('[data-buy]').forEach(function (a) {
-      a.addEventListener('click', function (e) {
-        e.preventDefault();
-        var tier = a.getAttribute('data-buy');
-        alert('Checkout for "' + tier + '" tier — not wired up yet.\n\nWhen you connect a payment processor (LemonSqueezy or Paddle), replace the data-buy attribute with a real checkout URL.');
-      });
+      var tier = a.getAttribute('data-buy');
+      if (CHECKOUT[tier]) {
+        a.setAttribute('href', CHECKOUT[tier]);
+        // Open in new tab so customers don't lose the marketing page.
+        a.setAttribute('target', '_blank');
+        a.setAttribute('rel', 'noopener');
+      }
     });
   })();
 </script>

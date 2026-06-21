@@ -51,8 +51,8 @@ You'll need to do these before the site is fully production-ready:
 7. **Analytics (optional).** No analytics installed. If you want traffic data, add Plausible / Fathom / Umami (privacy-respecting, no cookie banner needed) or GA4. The privacy policy already mentions Plausible/Fathom by name — change it if you go with something else.
 
 8. **Lawyer review.** The legal pages (Terms, Privacy, Refund, EULA) are a solid starting point but **should be reviewed by a lawyer before public launch**. They're written conservatively and reflect typical SaaS practices, but every business is different. Particular things to double-check:
-   - Your legal name / entity (currently shows as "Josh Isaacs" — fine for sole proprietor, but update if you incorporate)
-   - State / jurisdiction (currently Colorado — adjust if relevant)
+   - Your legal name / entity (currently presented as just "Plugr" — update if you incorporate or want your real name on the docs)
+   - Jurisdiction (currently "United States of America" at the country level — narrow to a specific state if your lawyer recommends it)
    - The specific merchant of record (currently "LemonSqueezy or Paddle" — pick one and update)
    - Any local consumer protection requirements that apply where most of your customers live
 

@@ -154,7 +154,7 @@
       <div><h5>Support</h5><ul><li><a href="/support/">Help center</a></li><li><a href="/support/getting-started.html">Getting started</a></li><li><a href="/support/faq.html">FAQ</a></li><li><a href="/support/troubleshooting.html">Troubleshooting</a></li><li><a href="/support/contact.html">Contact</a></li></ul></div>
       <div><h5>Legal</h5><ul><li><a href="/legal/terms.html">Terms of Service</a></li><li><a href="/legal/privacy.html">Privacy Policy</a></li><li><a href="/legal/refund.html">Refund Policy</a></li><li><a href="/legal/eula.html">License Agreement</a></li><li><a href="/about.html">About</a></li></ul></div>
     </div>
-    <div class="site-footer-bottom"><span>© 2026 Plugr · made by Josh Isaacs · Boulder, Colorado</span><span><a href="mailto:hello@plugr.co">hello@plugr.co</a></span></div>
+    <div class="site-footer-bottom"><span>© 2026 Plugr · made by an indie producer</span><span><a href="mailto:hello@plugr.co">hello@plugr.co</a></span></div>
   </div>
 </footer>
 
@@ -163,10 +163,12 @@
 var b=document.querySelector('.nav-toggle'),n=document.getElementById('primary-nav');
 if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded','false');}});}
 
-// Download button — wire to your actual DMG release URL once you have it.
-// For now, alerts the user that a download URL needs to be configured.
+// Download button → GitHub Releases "latest" page. Users see the
+// most recent release with the DMG attached. (Direct-file URL would
+// require a stable, versionless asset name from electron-builder;
+// the releases page is bulletproof until we lock that down.)
 var d=document.getElementById('download-btn');
-if(d){d.addEventListener('click',function(e){e.preventDefault();alert('Download URL not yet configured.\n\nReplace the #download href on this button with a real DMG download link (your own server, GitHub Releases, etc.) before going live.');});}
+if(d){d.setAttribute('href','https://github.com/plugr-app/plugr-releases/releases/latest');d.setAttribute('target','_blank');d.setAttribute('rel','noopener');}
 })();
 </script>
 </body>
