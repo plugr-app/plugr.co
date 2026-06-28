@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Troubleshooting — Plugr help</title>
-  <meta name="description" content="Solutions to the most common Plugr issues — scan problems, missing plugins, update detection, project parsing, and macOS Gatekeeper warnings." />
+  <meta name="description" content="Solutions to the most common Plugr issues — scan problems, missing plugins, update detection, and project parsing." />
   <link rel="canonical" href="https://plugr.co/support/troubleshooting.html" />
   <link rel="icon" type="image/png" href="/assets/logos/plugr-icon.png" />
   <meta name="theme-color" content="#0b0d12" />
@@ -42,15 +42,6 @@
 
       <h2 style="margin: 24px 0 20px; font-size: 1.25rem;">Installation &amp; launch</h2>
 
-      <details id="gatekeeper">
-        <summary>"can't verify developer" or "can't be opened" warning on first launch</summary>
-        <div class="answer">
-          <p>This is macOS Gatekeeper being cautious about apps from outside the App Store. Plugr is a real app, but until we're notarized by Apple you'll see this warning the very first time you open it.</p>
-          <p><strong>To get past it:</strong> right-click the Plugr app in your Applications folder and choose <strong>Open</strong>, then click <strong>Open</strong> in the dialog that appears. macOS will remember your choice — you only need to do this once.</p>
-          <p>If that doesn't work, open <strong>System Settings → Privacy &amp; Security</strong>, scroll down, and click <strong>Open anyway</strong> next to the message about Plugr.</p>
-        </div>
-      </details>
-
       <details>
         <summary>Plugr won't open at all (crashes immediately)</summary>
         <div class="answer">
@@ -87,7 +78,7 @@
       <details>
         <summary>The scan seems stuck or taking forever</summary>
         <div class="answer">
-          <p>First-time scans of very large libraries (5,000+ plugins) can take 5–10 minutes. The progress bar at the bottom should keep moving — if it does, just wait.</p>
+          <p>First-time scans of very large libraries (thousands of plugins) can take 5–10 minutes. The progress bar at the bottom should keep moving — if it does, just wait.</p>
           <p>If it appears truly stuck (no movement for several minutes), quit Plugr (⌘Q), reopen it, and try again. The scan resumes from where it left off.</p>
         </div>
       </details>
@@ -113,14 +104,14 @@
         <summary>A plugin says "No source" — what does that mean?</summary>
         <div class="answer">
           <p>It means Plugr doesn't yet know where to check for updates for that plugin's developer. To fix it: click the plugin, then click <strong>Find update source</strong>. Plugr will make its best guess and let you confirm in one click.</p>
-          <p>If the guess is wrong, you can paste in the developer's product page URL manually. Plugr will remember it for future checks.</p>
+          <p>If the guess is wrong, you can paste in the developer's product page URL (or whichever page they use to show the plugin name + current version) manually. Plugr will remember it for future checks.</p>
         </div>
       </details>
 
       <details>
         <summary>A plugin says "Managed" — how do I actually update it?</summary>
         <div class="answer">
-          <p>"Managed" means the plugin gets updates through a special installer app instead of its developer's website. Plugin Alliance, Native Instruments (Native Access), UAD, and Waves all do this. Plugr knows about these installer apps and shows an <strong>Open [installer name]</strong> button on the plugin's detail panel — click it to launch the right installer.</p>
+          <p>"Managed" means the plugin gets updates through a special installer app instead of its developer's website. Plugin Alliance, Native Instruments (Native Access), Waves, and several others do this. Plugr knows about these installer apps and shows an <strong>Open [installer name]</strong> button on the plugin's detail panel — click it to launch the right installer. If Plugr isn't showing a companion app, let us know and we'll add it in the next update.</p>
         </div>
       </details>
 
@@ -130,7 +121,7 @@
         <summary>My DAW projects aren't being detected</summary>
         <div class="answer">
           <p>Make sure you've added the folder where your projects live to Plugr. Open the <strong>Projects</strong> tab, click <strong>+ Add folder…</strong>, and point Plugr at the folder containing your sessions.</p>
-          <p>Plugr looks for Ableton (<code>.als</code>, <code>.alp</code>), Logic Pro (<code>.logicx</code>), and FL Studio (<code>.flp</code>) files. If your projects are in a different format (Pro Tools, Cubase, Studio One, etc.), we don't support them yet — they're on the roadmap.</p>
+          <p>Plugr looks for Ableton Live (<code>.als</code>, <code>.alp</code>), Logic Pro (<code>.logicx</code>), and FL Studio (<code>.flp</code>) files. If your projects are in a different format (Pro Tools, Cubase, Studio One, etc.), we don't support them yet — they're on the roadmap.</p>
         </div>
       </details>
 
@@ -144,7 +135,7 @@
       <details>
         <summary>The tempo or key for a project is wrong / missing</summary>
         <div class="answer">
-          <p>For Ableton and Logic projects, Plugr reads the tempo and key from your DAW's project metadata. Sometimes Logic doesn't store a project-wide key (it's track-based in Logic), so Plugr can't infer one — in that case, you can set the key manually by clicking the key chip in the project row.</p>
+          <p>For Ableton Live and Logic Pro projects, Plugr reads the tempo and key from your DAW's project metadata. Sometimes Logic doesn't store a project-wide key (it's track-based in Logic), so Plugr can't infer one — in that case, you can set the key manually by clicking the key chip in the project row.</p>
           <p>FL Studio doesn't always store key information in a way Plugr can read; manual override works there too.</p>
         </div>
       </details>

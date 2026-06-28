@@ -19,27 +19,92 @@
       {
         "@type": "Question",
         "name": "What plugin formats does Plugr support?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Plugr supports VST3, Audio Unit (AU), VST2, AAX, and CLAP. It also catalogues your Mac applications — DAWs, mastering tools, instrument standalones, and license managers — so it's a complete view of everything audio-related on your Mac." }
+        "acceptedAnswer": { "@type": "Answer", "text": "VST2, VST3, Audio Unit (AU), AAX, and CLAP. Plugr also catalogs your standalone applications so it's a complete picture of everything you have installed on your Mac." }
       },
       {
         "@type": "Question",
         "name": "Does Plugr work on Windows?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Not yet. Plugr is currently macOS-only (macOS 12 Monterey or later, both Apple Silicon and Intel)." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Not yet. Plugr is currently macOS-only. We require macOS 12 Monterey or later, and Plugr is a universal binary that runs natively on both Apple Silicon and Intel Macs. Windows support is on the long-term roadmap but not committed." }
+      },
+      {
+        "@type": "Question",
+        "name": "Which DAWs does Plugr work with for project parsing?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Plugr can read project files from Ableton Live (.als, .alp), Logic Pro (.logicx), and FL Studio (.flp). We're looking at adding more — Pro Tools, Cubase, Studio One, REAPER, and Bitwig are all on the list — but those will come later. Even without project parsing, Plugr works great with any DAW for the software library, update checking, and deals features." }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does the first scan take?",
+        "acceptedAnswer": { "@type": "Answer", "text": "For most people, 30 seconds to a couple of minutes. Larger libraries (thousands of plugins) might take 2–5 minutes the first time. After the first scan, Plugr only re-scans what's changed, so subsequent scans are much quicker." }
+      },
+      {
+        "@type": "Question",
+        "name": "Will Plugr delete my plugins?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Only when you explicitly tell it to. The \"Move to Trash\" button is the only action that touches your plugin files, and it's reversible — files go to your macOS Trash, not deleted permanently. Plugr asks for confirmation before doing so. Everything else — categories, tags, favorites, notes — is information Plugr keeps in its own database. None of it modifies your plugin files." }
       },
       {
         "@type": "Question",
         "name": "How does the free trial work?",
-        "acceptedAnswer": { "@type": "Answer", "text": "The 14-day free trial covers most features — library scan, projects, deal alerts, tags, notes, and update checking on up to 100 plugins. Power-user features (bulk operations, studio themes, iCloud sync, library export, backup/restore) unlock with a paid plan. No credit card required. After 14 days the app drops to read-only for your library; the Deals tab keeps working." }
+        "acceptedAnswer": { "@type": "Answer", "text": "The trial is 14 days, no credit card required. Most features work right away — library scan, project scans across Ableton/Logic/FL, the Deals tab and deal alerts, tags, notes, favorites, ratings, and the full producer tools. Update checking is capped at 100 plugins during the trial (more than enough to see how it works), and the power-user features unlock with a paid plan: bulk operations, the 8 studio palette themes, iCloud sync, library CSV export, and backup/restore. When the trial ends, Plugr drops to read-only mode for the library and projects. You keep all your data, but you can't run new scans or check for updates until you subscribe. The Deals tab keeps working forever, even without a paid license." }
       },
       {
         "@type": "Question",
         "name": "Can I get a refund?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes — 14-day money-back guarantee, no questions asked, for any reason. Email hello@plugr.co or use the cancel link in your purchase email." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — 14-day money-back guarantee on any plan, no questions asked. Email hello@plugr.co within 14 days of purchase and we'll process the refund. Full details on the refund policy page." }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the difference between subscription and lifetime?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Subscription gives you all features as long as you're subscribed. Cancel and the app drops to read-only mode. Lifetime is a one-time payment for all features available at the time of purchase, plus all future updates to those features — forever. We may sunset the Lifetime tier at some point as the app matures. Anyone who buys one before that happens keeps it forever, no matter what." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I switch between tiers later?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Monthly → Annual upgrades anytime and is prorated. Subscription → Lifetime is also fine; any unused time on your current subscription gets credited against the Lifetime price. If you bought Lifetime and want to downgrade or refund, email us within the refund window and we'll work it out." }
+      },
+      {
+        "@type": "Question",
+        "name": "How many Macs can I use my license on?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Subscription licenses work on up to 2 Macs (perfect for a studio Mac and a laptop). Lifetime licenses work on up to 3 Macs. You can deactivate any Mac through your customer portal — useful when you get a new computer or do a clean install." }
       },
       {
         "@type": "Question",
         "name": "Does Plugr send my data anywhere?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Your library, projects, tags, favorites and notes stay on your Mac. Plugr only reaches out to developer websites to check for updates and to deal sites to pull in sales — it never uploads your library anywhere. If you turn on iCloud sync, it syncs through Apple's iCloud, not our servers." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Your library, projects, tags, favorites, and notes all stay on your Mac. Plugr only reaches out to: Developer websites, to check for plugin updates (read-only); Deal sites, to pull in offers (read-only); Our licensing server, to verify your subscription is active. If you turn on iCloud sync, your data syncs between your own Macs through Apple's iCloud — not our servers. Full details in the privacy policy." }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Plugr work offline?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Mostly, yes. Scanning, organizing, project parsing, producer tools, themes, and viewing existing data all work offline. The features that need a connection are update checks and the Deals tab — both of which need to reach the internet." }
+      },
+      {
+        "@type": "Question",
+        "name": "Where does Plugr keep its data?",
+        "acceptedAnswer": { "@type": "Answer", "text": "In ~/Library/Application Support/Plugr/. That folder contains your library cache, tags, favorites, custom update sources, and preferences. If you delete it, Plugr will start fresh on next launch." }
+      },
+      {
+        "@type": "Question",
+        "name": "Where do the deals come from?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Plugr currently pulls deals from Plugin Boutique and Audio Plugin Deals. We're looking at adding more sources over time. Each source is updated automatically several times a day, so you're always seeing what's current." }
+      },
+      {
+        "@type": "Question",
+        "name": "I see a deal listed that doesn't actually exist anymore.",
+        "acceptedAnswer": { "@type": "Answer", "text": "That happens occasionally — retailers sometimes pull deals early or the prices change. If you find one, you can dismiss it with the × button. Plugr refreshes the deal list automatically, so stale entries usually disappear within a day or two." }
+      },
+      {
+        "@type": "Question",
+        "name": "How accurate is the update detection?",
+        "acceptedAnswer": { "@type": "Answer", "text": "For developers Plugr already knows about — most of the big names you use every day — extremely accurate. For developers it doesn't recognize yet, Plugr makes its best guess and lets you confirm in one click. Once confirmed, it remembers for next time. Some developers (Plugin Alliance, Native Instruments, Waves, etc.) handle updates through their own installer apps. In these cases, we've still tried to include update sources if the developer lists them publicly on their website somewhere. However, some don't expose version info publicly, so manual checking may be required." }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the \"Major upgrade\" badge?",
+        "acceptedAnswer": { "@type": "Answer", "text": "It means the available update is a full new major version of the plugin — usually a paid upgrade, not a free patch. Plugr flags these so you know to expect to pay for it before clicking through." }
+      },
+      {
+        "@type": "Question",
+        "name": "A plugin update was detected but it's the wrong version.",
+        "acceptedAnswer": { "@type": "Answer", "text": "It happens sometimes — developer sites occasionally change layout in ways that confuse Plugr's reader. To fix it, click the plugin, then click Edit update source. You can type in the correct current version and Plugr will recalibrate. The fix sticks for future checks. You can also let us know at hello@plugr.co and we'll fix it for everyone in the next release." }
       }
     ]
   }
@@ -81,7 +146,7 @@
       <details id="formats">
         <summary>What plugin formats does Plugr support?</summary>
         <div class="answer">
-          <p>VST3, Audio Unit (AU), VST2, AAX, and CLAP. Plugr also catalogues your audio applications — DAWs, mastering tools, instrument standalones, and license managers — so it's a complete picture of everything audio-related on your Mac.</p>
+          <p>VST2, VST3, Audio Unit (AU), AAX, and CLAP. Plugr also catalogs your standalone applications so it's a complete picture of everything you have installed on your Mac.</p>
         </div>
       </details>
 
@@ -96,14 +161,14 @@
         <summary>Which DAWs does Plugr work with for project parsing?</summary>
         <div class="answer">
           <p>Plugr can read project files from <strong>Ableton Live</strong> (<code>.als</code>, <code>.alp</code>), <strong>Logic Pro</strong> (<code>.logicx</code>), and <strong>FL Studio</strong> (<code>.flp</code>). We're looking at adding more — Pro Tools, Cubase, Studio One, REAPER, and Bitwig are all on the list — but those will come later.</p>
-          <p>Even without project parsing, Plugr works great with any DAW for the library, update checking, and deals features.</p>
+          <p>Even without project parsing, Plugr works great with any DAW for the software library, update checking, and deals features.</p>
         </div>
       </details>
 
       <details>
         <summary>How long does the first scan take?</summary>
         <div class="answer">
-          <p>For most people, 30 seconds to a couple of minutes. Larger libraries (thousands of plugins) might take 2–5 minutes the first time. After the first scan, Plugr only re-scans what's changed, so subsequent scans are nearly instant.</p>
+          <p>For most people, 30 seconds to a couple of minutes. Larger libraries (thousands of plugins) might take 2–5 minutes the first time. After the first scan, Plugr only re-scans what's changed, so subsequent scans are much quicker.</p>
         </div>
       </details>
 
@@ -166,7 +231,7 @@
           <p>Your library, projects, tags, favorites and notes all stay on your Mac. Plugr only reaches out to:</p>
           <ul>
             <li><strong>Developer websites</strong>, to check for plugin updates (read-only)</li>
-            <li><strong>Deal sites</strong>, to pull in sales (read-only)</li>
+            <li><strong>Deal sites</strong>, to pull in offers (read-only)</li>
             <li><strong>Our licensing server</strong>, to verify your subscription is active</li>
           </ul>
           <p>If you turn on iCloud sync, your data syncs between your own Macs through Apple's iCloud — not our servers. Full details in the <a class="text-link" href="/legal/privacy.html">privacy policy</a>.</p>
@@ -193,14 +258,7 @@
       <details>
         <summary>Where do the deals come from?</summary>
         <div class="answer">
-          <p>Plugr pulls deals from <strong>VST Buzz</strong>, <strong>Plugin Boutique</strong>, and <strong>Audio Plugin Deals</strong>. We're looking at adding more sources over time. Each source is updated automatically several times a day, so you're always seeing what's current.</p>
-        </div>
-      </details>
-
-      <details>
-        <summary>Are the affiliate links a problem for me?</summary>
-        <div class="answer">
-          <p>No. The links work the same as any direct link to the retailer; you pay the same price either way. Plugr may earn a small affiliate commission if you buy something — which is how the Deals tab funds itself and stays free for everyone. Full disclosure in the <a class="text-link" href="/legal/privacy.html#affiliates">privacy policy</a>.</p>
+          <p>Plugr currently pulls deals from <strong>Plugin Boutique</strong> and <strong>Audio Plugin Deals</strong>. We're looking at adding more sources over time. Each source is updated automatically several times a day, so you're always seeing what's current.</p>
         </div>
       </details>
 
@@ -218,7 +276,7 @@
         <summary>How accurate is the update detection?</summary>
         <div class="answer">
           <p>For developers Plugr already knows about — most of the big names you use every day — extremely accurate. For developers it doesn't recognize yet, Plugr makes its best guess and lets you confirm in one click. Once confirmed, it remembers for next time.</p>
-          <p>Some developers (Plugin Alliance, Native Instruments, UAD, Waves) handle updates through their own installer apps that don't expose version info publicly. Plugr labels these "Managed" and points you to the right installer to apply updates.</p>
+          <p>Some developers (Plugin Alliance, Native Instruments, Waves, etc.) handle updates through their own installer apps. In these cases, we've still tried to include update sources if the developer lists them publicly on their website somewhere. However, some don't expose version info publicly, so manual checking may be required.</p>
         </div>
       </details>
 
