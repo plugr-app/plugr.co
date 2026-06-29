@@ -478,6 +478,13 @@ a.text-link:hover { text-decoration-color: var(--accent-strong); }
   .feature-card-centered { grid-column: 2 / 3; }
 }
 
+/* Force 3-column layout for fixed-count step sequences and similar.
+   Stacks vertically on narrow viewports — skips the awkward 2-col orphan. */
+.feature-grid-3 { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 760px) {
+  .feature-grid-3 { grid-template-columns: 1fr; }
+}
+
 /* Alternating prose+image rows */
 .split-row {
   display: grid;
