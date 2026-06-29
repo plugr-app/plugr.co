@@ -547,12 +547,36 @@ a.text-link:hover { text-decoration-color: var(--accent-strong); }
 
 /* 7. PRICING CARDS --------------------------------------------------- */
 
+.trial-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px 28px;
+  background: var(--bg-1);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  max-width: 1080px;
+  margin: 0 auto 24px;
+}
+.trial-banner-text { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.trial-banner-title { font-size: 1.1rem; font-weight: 700; letter-spacing: -0.01em; }
+.trial-banner-sub { color: var(--text-2); font-size: 14px; }
+@media (max-width: 600px) {
+  .trial-banner { flex-direction: column; align-items: stretch; text-align: center; gap: 14px; padding: 20px; }
+  .trial-banner-text { align-items: center; }
+}
+
 .pricing-grid {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   max-width: 1080px;
   margin-inline: auto;
+}
+.pricing-grid-3 { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 900px) {
+  .pricing-grid-3 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
 }
 .pricing-card {
   position: relative;
