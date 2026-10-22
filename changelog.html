@@ -39,6 +39,44 @@
     <h1>What's new in Plugr</h1>
     <p class="meta">Every release in plain English. Bookmark this page if you want to follow along.</p>
 
+    <h2 id="v1-0-33">1.0.33 — Update checking that actually knows</h2>
+    <p class="meta">October 22, 2026</p>
+    <p>
+      A long pass over the one thing Plugr exists to do: tell you which of your plugins are out of date.
+      Most of this is invisible until you open the app and find that several thousand plugins have a real
+      answer next to them instead of a shrug. Everything between 1.0.0 and here is rolled into this entry.
+    </p>
+
+    <h3>Far more of your library gets a real answer</h3>
+    <ul>
+      <li>Thousands of new and repaired update sources in the built-in registry — Voxengo, Kilohearts, Antares, FabFilter, Arturia, Plugin Alliance, Polyverse, Wavesfactory, Valhalla DSP, Native Instruments, iZotope, Baby Audio and plenty more</li>
+      <li>Plugr can now read version pages that are built by JavaScript or sitting behind a bot check. Those used to be invisible to it, so the plugin just showed as unchecked — Valhalla DSP and A1Audio are two that work now</li>
+      <li>Developer-wide sources for companies that ship their whole catalog on one version number, so their new plugins are covered the day they appear rather than whenever we get round to adding them</li>
+      <li>Legacy versions get their own line. If you own FabFilter Pro-C 2, Plugr checks the last Pro-C 2 build rather than telling you Pro-C 3 exists and calling that an update</li>
+    </ul>
+
+    <h3>Fewer wrong answers</h3>
+    <ul>
+      <li>Some plugins don't report their own version — a few AAX builds just carry a wrapper number, and a handful of others report nothing at all. Plugr used to compare that number anyway and announce an update that wasn't real. It now says it can't tell, and shows you the version the developer publishes so you can compare by eye</li>
+      <li>Fixed a batch of sources that were quietly pointing at the wrong product — a different plugin from the same company, or a newer paid version of the one you own</li>
+      <li>"Find missing sources" now checks its own work before saving anything. It used to accept any version-shaped number near the plugin's name, which on a marketing page can be a star rating, a system requirement, or another product's version. It now requires real evidence and tells you how many candidates it threw out</li>
+    </ul>
+
+    <h3>A clearer picture of what actually needs you</h3>
+    <ul>
+      <li>Update status is now grouped by what you'd do about it: <strong>Updates available</strong>, <strong>Up to date</strong>, <strong>Check manually</strong> (the developer publishes no version Plugr can read, but it knows the page), <strong>No source yet</strong>, and <strong>Check failed</strong>. The single "Unknown" bucket lumped all of those together and made Plugr look like it had no idea about plugins it knew perfectly well</li>
+      <li>Hover any filter for a one-line explanation of what it means and what to do about it. You can turn the hints off in Preferences</li>
+      <li>The toolbar shows what share of your library Plugr can check automatically</li>
+      <li>Uninstallers, format shells and helper binaries aren't plugins, so they no longer sit in your library pretending to need an update. They're under Hidden if you want them, and there's a preference to bring them back</li>
+    </ul>
+
+    <h3>Apple Silicon and the Rosetta deadline</h3>
+    <ul>
+      <li>Apple removes Rosetta in macOS 28. Plugr now flags every Intel-only plugin you own and tells you plainly that it stops working then — worth knowing before it happens mid-session rather than after</li>
+      <li>It separates the ones you'd actually lose from the ones that are just a stale leftover sitting next to a native copy of the same plugin, which you can delete today</li>
+      <li>Where a newer version exists, it says so — developers usually went native in a normal release, so updating is often the whole fix</li>
+    </ul>
+
     <h2 id="v1-0-0">1.0.0 — Initial public release</h2>
     <p class="meta">June 29, 2026</p>
     <p>
