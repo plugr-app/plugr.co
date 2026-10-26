@@ -39,6 +39,46 @@
     <h1>What's new in Plugr</h1>
     <p class="meta">Every release in plain English. Bookmark this page if you want to follow along.</p>
 
+    <h2 id="v1-0-34">1.0.34 — Say no to a paid upgrade once</h2>
+    <p class="meta">October 26, 2026</p>
+    <p>
+      Mostly about the updates you don't want. If a developer has moved to a new major version and you
+      haven't bought it, Plugr should stop bringing it up — and until now it couldn't really do that.
+    </p>
+
+    <h3>Ignore major upgrades</h3>
+    <ul>
+      <li>A new option, next to the existing ignore actions, for the case where the only newer release is a
+        whole major version ahead — usually a paid upgrade rather than a free patch</li>
+      <li>It stays quiet for every release of that major, not just the one you dismissed. Ignoring a single
+        update pinned one exact version number, so the next time the developer shipped a small fix the
+        plugin started asking again</li>
+      <li>You still hear about updates within the version you own, which "ignore all updates" would have
+        silenced too</li>
+      <li>If you ever do buy the upgrade, it switches itself back on. Nothing to remember</li>
+    </ul>
+
+    <h3>Right-click menus work on several plugins at once</h3>
+    <ul>
+      <li>Ignoring updates now works on a selection. Most plugins are installed in three or four formats, so
+        silencing one upgrade used to mean doing it three or four times</li>
+      <li>Favourites and hiding are proper toggles — you can un-favourite and unhide a group, which previously
+        only worked one plugin at a time</li>
+      <li>You can point a whole selection at another plugin's updates in one go, so every format of a plugin
+        follows one source</li>
+    </ul>
+
+    <h3>Better update sources</h3>
+    <ul>
+      <li>When Plugr works out how to read a developer's page, it no longer cuts words in half while doing it.
+        The patterns it saves are more precise, and less likely to find the wrong number on a page later</li>
+      <li>If you let Plugr share an update source you've found, that now actually reaches the shared registry.
+        It had been failing quietly, which means the sources people contributed never arrived. Fixed, and it
+        now says so when something goes wrong instead of staying silent</li>
+      <li>Sources found by "Find missing sources" are shared too. Only that one button was ever able to fill
+        in most of a library, and it was the one that didn't pass anything on</li>
+    </ul>
+
     <h2 id="v1-0-33">1.0.33 — Update checking that actually knows</h2>
     <p class="meta">October 22, 2026</p>
     <p>
